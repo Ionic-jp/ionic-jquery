@@ -11,4 +11,13 @@ export class HomePage {
 
   }
 
+  ionViewDidEnter(){
+      $('p').text('Hello jQuery!');
+
+      setTimeout(()=>{
+          const $svg = $('svg').drawsvg();
+          $svg.drawsvg('animate');
+      },100);
+  }
 }
+
